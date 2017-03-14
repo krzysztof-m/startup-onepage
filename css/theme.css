@@ -1,0 +1,245 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
+/*------ 1. General styles ------*/
+/*--- typography ---*/
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+h1,
+h2 {
+    margin-bottom: 30px;
+}
+/*--- layout ---*/
+section {
+	padding: 50px 0 80px;
+}
+section .h1 {
+	margin: 30px 0;
+}
+
+.color-layer {
+    position: relative;
+    z-index: 2;
+}
+.color-layer::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.4);
+    z-index: -1;
+}
+/*--- buttons ---*/
+.btn {
+	border-radius: 0;
+	padding: 10px 30px;
+}
+.call-to-action,
+.btn-pricing {
+    padding: 10px 30px;
+    background: #f90;
+    color: #fff;
+    transition: all .2s linear;
+    border: 2px solid #f90;
+}
+.call-to-action:hover,
+.btn-pricing:hover {
+    background: #fff;
+    color: #f90;
+}
+/*--- modal ---*/
+.modal-dialog {
+    width: 80%;
+}
+.modal-content {
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+}
+.close {
+    font-size: 40px;
+}
+
+/*------ 2. Header section ------*/
+.navbar {
+	border-radius: 0;
+}
+
+/*------ 3. Intro section ------*/
+#intro {
+    background: url("../img/1.jpg") no-repeat fixed 50% 100%;
+    background-size: cover;
+    height: 95vh;
+    padding-top: 200px;
+}
+.intro-text-wrapper {
+    z-index: 99;
+    color: #fff;
+}
+
+/*------ 4. About section ------*/
+.feature {
+    text-align: center;
+}
+.icon {
+    display: inline-block;
+    font-size: 30px;
+    background: #f90;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    color: #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+/*------ 5. Watch section ------*/
+#watch-video {
+    background: url("../img/2.jpg") no-repeat fixed 50% 100%;
+    background-size: cover;
+    padding: 100px 0;
+    color: #fff;
+}
+
+/*------ 6. Services section ------*/
+#services .feature {
+    float: left;
+    margin-bottom: 20px;
+}
+#services .feature h4,
+#services .feature p {
+    text-align: left;
+}
+#services .feature h4 {
+    font-size: 15px;
+}
+.icon.left {
+    display: inline-block;
+    font-size: 30px;
+    background: #fff;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    color: #f90;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    float: left;
+    margin-right: 30px;
+}
+.featrue:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*------ 7. Pricing section ------*/
+#pricing {
+    background: url("../img/3.jpg") no-repeat fixed 50% 100%;
+    background-size: cover;
+    padding: 100px 0;
+}
+#pricing h2 {
+    color: #fff;
+}
+.pricing-table {
+    background: rgba(256,256,256,.9);
+    color: #333;
+}
+.pricing-table .pricing-header,
+.pricing-table .pricing-body,
+.pricing-table .pricing-footer {
+    padding: 10px 0;
+}
+
+.pricing-table .pricing-header  {
+    background: #f90;
+    color: #fff;
+    
+}
+.pricing-table .pricing-body span {
+    font-size: 80px;
+    font-weight: 300;
+    color: #333;
+}
+.pricing-table .pricing-body sup {
+    font-size: 30%;
+    top: -1.5em;
+}
+.pricing-table .pricing-body ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.pricing-table .pricing-body p {
+    color: #aaa;
+}
+.pricing-table .pricing-body ul > li {
+    font-size: 11px;
+    padding: 5px 0;
+    text-transform: uppercase;
+    color: #696969;
+}
+
+
+/*------ 6. Contact section ------*/
+#map {
+    width: 100%;
+    height: 500px;
+}
+
+/*------ 7. Contact section ------*/
+#map {
+    width: 100%;
+    height: 300px;
+}
+/*------ 8. Footer ------*/
+.footer {
+    padding: 10px 0;
+    background: #161616;
+    color: #fff;
+}
+/*--- responsively ---*/
+@media (max-width: 991px) {
+    section,
+    #pricing {
+        padding: 30px 0;
+    }
+    [class^="col-"] {
+        margin-bottom: 30px;
+    }
+    .pricing-table {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .modal-dialog {
+        width: auto;
+    }
+    .close {
+        float: none;
+    }
+}
+@media (max-width: 600px) {
+    .pricing-table {
+        width: 75%;
+    }
+    .icon.left {
+        width: 50px;
+        height: 120px;
+    }
+}
+@media (max-width: 400px) {
+    .pricing-table {
+        width: 95%;
+    }
+}

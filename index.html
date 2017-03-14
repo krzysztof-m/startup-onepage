@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/theme.css">
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script src="http://maps.googleapis.com/maps/api/js"></script>
+        <script type="text/javascript" src="js/map.js"></script>
+        <!--[if lte IE 9]>
+        <link rel="stylesheet" type="text/css" href="css/ie.css">
+        <script type="text/javascript" src="js/html5shiv.js"></script>
+        <![endif]-->
+
+	</head>
+	<body data-spy="scroll" data-target="#navbar-collapse-1">
+		<header>
+             <nav class="navbar navbar-default navbar-fixed-top">
+              <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">One Page</a>
+                </div>
+                  <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                      <li class="active"><a href="#intro">Home</a></li>
+                      <li><a href="#about">About Us</a></li>
+                      <li><a href="#watch-video">Watch video</a></li>
+                      <li><a href="#services">Services</a></li>
+                      <li><a href="#pricing">Pricing</a></li>
+                      <li><a href="#contact">Contact</a></li>
+                    </ul>
+                  </div>
+              </div>
+            </nav>
+        </header>
+        
+        <!-- main picture and short description with call to action with background image -->
+        <section id="intro" class="color-layer">
+            <div class="intro-text-wrapper container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h1>This is some one page template</h1>
+                            <p>Donec eu vulputate risus, sed consectetur quam. Sed tempor pellentesque gravida. Proin vitae dui sed metus sollicitudin consectetur.</p>
+                            <a class="btn call-to-action">Learn more</a>
+                        </div><!-- /.col-md-6 -->
+                    </div><!-- /.row -->
+                </div><!-- /.container -->
+            </div><!-- /.intro-wrapper -->
+        </section>
+        
+        <!-- short description with 3 icons -->
+        <section id="about">
+            <div class="container">
+                <h2 class="text-center">Some facts</h2>
+                <p  class="text-center lead">Aenean pellentesque ipsum volutpat nisl volutpat, sed porttitor orci convallis. Etiam laoreet urna libero, quis laoreet lectus ornare a.</p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="feature">
+                            <span class="icon"><i class="fa fa-check"></i></span>
+                            <h4>Some feature</h4>
+                            <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque eleifend sodales hendrerit.</p>
+                        </div>
+                    </div><!-- /.col-md-4 -->
+                    <div class="col-md-4">
+                        <div class="feature">
+                            <span class="icon"><i class="fa fa-star"></i></span>
+                            <h4>Some feature</h4>
+                            <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque eleifend sodales hendrerit.</p>
+                        </div>
+                    </div><!-- /.col-md-4 -->
+                    <div class="col-md-4">
+                        <div class="feature">
+                            <span class="icon"><i class="fa fa-certificate"></i></span>
+                            <h4>Some feature</h4>
+                            <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque eleifend sodales hendrerit.</p>
+                        </div>
+                    </div><!-- /.col-md-4 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section>
+        
+        <!-- short section with background image & button to watch video (open in modal) -->
+        <section id="watch-video" class="color-layer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Our team in action</h2>
+                        <p>Nullam felis felis, gravida ac purus at, efficitur gravida nisi. Morbi dolor lectus, porttitor sed enim rutrum, vestibulum rutrum libero. Nam vel ante semper, blandit purus quis, hendrerit sapien. Nulla finibus justo id mi molestie, ac ornare felis fermentum.</p>
+                        <a class="btn call-to-action" type="button" data-toggle="modal" href="#yt-video">Watch video</a>
+                        
+                    </div><!-- /.col-md-6 -->
+                </div><!-- /.row -->
+            </div>
+        </section>
+        <div class="modal fade" id="yt-video" tabindex="1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <div class="row">
+                        <div class="col-md-8">         
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/onXpKXbnbE0?rel=0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer imperdiet nisi lectus, ut convallis libero lacinia non. Fusce condimentum dui ex, sit amet commodo tortor porta sed. In laoreet diam ac pellentesque pellentesque. Integer imperdiet eu lorem non viverra. Morbi non ultricies nisl. Integer vestibulum, nisi nec facilisis imperdiet, arcu neque malesuada enim, ut rutrum libero turpis nec tellus. Sed nec eleifend libero. Nullam ac iaculis metus. Etiam vel enim at tortor ultricies mattis maximus sed est. Proin non ex nec ipsum suscipit condimentum et quis justo. Sed at euismod odio. Proin ullamcorper venenatis est, dapibus ornare eros suscipit id. Fusce non ullamcorper eros, et ultrices tortor. </p>
+                        </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.modal -->
+        
+        <!-- section divided in two columns (image and text with icons) -->
+        <section id="services">
+            <div class="container">
+                <h2 class="text-center">What can we do for you?</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="img-responsive center-block" src="img/4.jpg" />
+                    </div><!-- /.col-md-6 -->
+                    <div class="col-md-6">
+                        <div class="feature">
+                            <span class="icon left"><i class="fa fa-home"></i></span>
+                            <h4>Some feature</h4>
+                            <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque eleifend sodales hendrerit.</p>
+                        </div>
+                        <div class="feature">
+                            <span class="icon left"><i class="fa fa-user"></i></span>
+                            <h4>Some feature</h4>
+                            <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque eleifend sodales hendrerit.</p>
+                        </div>
+                        <div class="feature">
+                            <span class="icon left"><i class="fa fa-calendar"></i></span>
+                            <h4>Some feature</h4>
+                            <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque eleifend sodales hendrerit.</p>
+                        </div>
+                        <div class="feature">
+                            <span class="icon left"><i class="fa fa-desktop"></i></span>
+                            <h4>Some feature</h4>
+                            <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque eleifend sodales hendrerit.</p>
+                        </div>
+                        <div class="feature">
+                            <span class="icon left"><i class="fa fa-mobile"></i></span>
+                            <h4>Some feature</h4>
+                            <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque eleifend sodales hendrerit.</p>
+                        </div>
+                        <div class="feature">
+                            <span class="icon left"><i class="fa fa-users"></i></span>
+                            <h4>Some feature</h4>
+                            <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque eleifend sodales hendrerit.</p>
+                        </div>
+                    </div><!-- /.col-md-6 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section>
+        
+        <!-- pricing table with background image -->
+        <section id="pricing" class="color-layer">
+            <h2  class="text-center">Pricing</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="pricing-table text-center">
+                            <header class="pricing-header">
+                                <h4>Basic</h4><!-- pro premium -->
+                            </header>
+                            <div class="pricing-body">
+                                <p><span>50<sup>$</sup></span>/month</p>
+                                <ul>
+                                    <li>Proin iaculis quam eget</li>
+                                    <li>Nullam in velit</li>
+                                    <li>In fermentum porttitor</li>
+                                    <li>Mauris eu nibh eget</li>
+                                    <li>Nam eu odio id odio</li>
+                                </ul>
+                            </div>
+                            <footer class="pricing-footer">
+                                <a class="btn btn-pricing">Sign up</a>
+                            </footer>
+                        </div>
+                    </div><!-- /.col-md-4 -->
+                    <div class="col-md-4">
+                        <div class="pricing-table text-center">
+                            <header class="pricing-header">
+                                <h4>Pro</h4>
+                            </header>
+                            <div class="pricing-body">
+                                <p><span>50<sup>$</sup></span>/month</p>
+                                <ul>
+                                    <li>Proin iaculis quam eget</li>
+                                    <li>Nullam in velit</li>
+                                    <li>In fermentum porttitor</li>
+                                    <li>Mauris eu nibh eget</li>
+                                    <li>Nam eu odio id odio</li>
+                                </ul>
+                            </div>
+                            <footer class="pricing-footer">
+                                <a class="btn btn-pricing">Sign up</a>
+                            </footer>
+                        </div>
+                    </div><!-- /.col-md-4 -->
+                    <div class="col-md-4">
+                        <div class="pricing-table text-center">
+                            <header class="pricing-header">
+                                <h4>Premium</h4>
+                            </header>
+                            <div class="pricing-body">
+                                <p><span>50<sup>$</sup></span>/month</p>
+                                <ul>
+                                    <li>Proin iaculis quam eget</li>
+                                    <li>Nullam in velit</li>
+                                    <li>In fermentum porttitor</li>
+                                    <li>Mauris eu nibh eget</li>
+                                    <li>Nam eu odio id odio</li>
+                                </ul>
+                            </div>
+                            <footer class="pricing-footer">
+                                <a class="btn btn-pricing">Sign up</a>
+                            </footer>
+                        </div>
+                    </div><!-- /.col-md-4 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section>
+        
+        <!-- contact: address email phone -->
+        <section id="contact">
+            <div class="container">
+                <h2 class="text-center">Contact</h2>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="feature">
+                            <span class="icon"><i class="fa fa-mobile"></i></span>
+                            <h4>Phone</h4>
+                            <p>123 456 789<br />987 654 312</p>
+                        </div>
+                    </div><!-- /.col-md-4 -->
+                    <div class="col-sm-4">
+                        <div class="feature">
+                            <span class="icon"><i class="fa fa-home"></i></span>
+                            <h4>Address</h4>
+                            <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque eleifend sodales hendrerit.</p>
+                        </div>
+                    </div><!-- /.col-md-4 -->
+                    <div class="col-sm-4">
+                        <div class="feature">
+                            <span class="icon"><i class="fa fa-envelope"></i></span>
+                            <h4>E-mail</h4>
+                            <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque eleifend sodales hendrerit.</p>
+                        </div>
+                    </div><!-- /.col-md-4 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section>
+        
+        <!-- google map with changed marker and map color -->
+        <section id="map"></section>
+        
+        <footer class="footer">
+            <p class="text-center">&copy; Some template</p>
+        </footer>
+        
+        <script>
+            $(document).ready(function() {
+                $('body').scrollspy({ target: '#navbar-collapse-1' });
+                
+                $(document).on('click','nav li a',function(e) {
+                    e.preventDefault();
+                    var hash = $(this).attr('href');
+                    $('html,body').animate({scrollTop: $(hash).offset().top},800,function() {
+                        window.location.hash = hash;
+                    });
+                });
+            });
+        </script>
+        <script type="text/javascript" src="js/respond.js"></script>
+	</body>
+</html>
